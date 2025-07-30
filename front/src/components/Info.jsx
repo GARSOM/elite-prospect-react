@@ -16,7 +16,7 @@ const Info = () => {
       <div className="info-grid">
         {items.map(item => (
           <div className="info-card" key={item.id}>
-            <div className="info-icon">{item.icon}</div>
+            {/* <div className="info-icon">{item.icon}</div> */}
             <h3>{item.title}</h3>
             <p>{item.shortText}</p>
             <button onClick={() => setModalItem(item)}>Подробнее</button>
