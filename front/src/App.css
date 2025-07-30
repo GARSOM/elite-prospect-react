@@ -1,0 +1,16 @@
+body {
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* небо-море */
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+body.dark {
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+body.light {
+  background-color: #f2f2f2;
+  color: #111111;
+}

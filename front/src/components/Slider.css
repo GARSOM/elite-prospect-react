@@ -1,0 +1,70 @@
+.main-slider {
+  width: 60%;
+  height: 60vh;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  opacity: 0.95;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--accent, #cfb386); /* Золотистая рамка */
+  transition: transform 0.4s ease;
+}.main-slider:hover {
+  transform: scale(1.01);
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 28px;
+  border-radius: 12px;
+  max-width: 500px;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  border-left: 3px solid var(--accent, #cfb386); /* Левый акцент */
+}
+
+.overlay h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  color: var(--accent, #cfb386);
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin: 0;
+  color: #f1f1f1;
+}
+
+
+/* Мобилка */
+@media (max-width: 768px) {
+  .main-slider {
+    width: 90%;
+    height: 50vh;
+  }
+
+  .overlay {
+    padding: 16px;
+    bottom: 6%;
+    left: 6%;
+  }
+
+  .overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+}

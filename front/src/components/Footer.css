@@ -1,0 +1,59 @@
+.footer {
+  padding-bottom: 40px;
+  color: currentColor;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* .footer-column {
+  flex: 1 1 300px;
+  min-width: 250px;
+} */
+
+.footer-column h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+
+}
+
+.footer-column p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.footer-column a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
+.footer-map-embed iframe {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 8px;
+  width: 100%;
+  height: 200px;
+}
+
+/* Мобилка */
+@media (max-width: 768px) {
+  .footer-info {
+    flex-direction: column;
+
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-map-embed iframe {
+    height: 240px;
+  }
+}

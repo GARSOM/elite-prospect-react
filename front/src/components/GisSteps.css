@@ -1,0 +1,115 @@
+.gis {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gis h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gis-banner {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+.step {
+  max-width: 250px;
+  text-align: center;
+}
+
+.step img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.step h3 {
+  margin: 12px 0 8px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Опционально — стрелки между шагами */
+.step-row::before,
+.step-row::after {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #0008;
+}
+
+.step-row::before {
+  left: 35%;
+}
+
+.step-row::after {
+  left: 66%;
+}
+
+@media (max-width: 768px) {
+
+  .step-row::before,
+  .step-row::after {
+    display: none;
+  }
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-in;
+}
+
+.modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.8);
+  animation: zoomIn 0.2s ease-out;
+  cursor: zoom-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0.5
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}

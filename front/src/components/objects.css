@@ -1,0 +1,89 @@
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.service-block {
+  border-bottom: 1px solid #0a6dd7;
+  justify-items: center;
+}
+
+.service-block h2 {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.service-block h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.service-swiper {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 30px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+
+.service-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-description {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.service-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 32px;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.service-link:hover {
+  background-color: #0056b3;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff; /* например, синий */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #cfb386;
+}
+.swiper-pagination-fraction {
+  color: #cfb386; /* цвет текста */
+  font-weight: 600;
+  font-size: 16px;
+}

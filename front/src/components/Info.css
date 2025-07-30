@@ -1,0 +1,68 @@
+.info-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: var(--card, #fff);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.info-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.info-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.info-card button {
+  background-color: var(--btn, #007bff);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.info-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.info-modal-content {
+  background: var(--card, #fff);
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}

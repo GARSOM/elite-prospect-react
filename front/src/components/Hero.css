@@ -1,0 +1,64 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-content {
+  animation: slideIn 1.5s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.hero-logo {
+  max-width: 400px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.hero-logo {
+  filter: invert(0);
+}
+
+body.light .hero-logo {
+  filter: invert(1);
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--accent, #cfb386);
+}
+
+/* Анимации */
+@keyframes slideIn {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
