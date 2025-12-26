@@ -4,6 +4,21 @@ const router = express.Router();
 // Заглушка — пока без БД
 const documents = [
   {
+    id: "22",
+    title: "Договор_Управления_Шаблон.",
+    url: "https://drive.google.com/file/d/1Y5qaV3he9UCL_jRrjWtiCPpNfLSBytai/view?usp=drive_link"
+  },
+  {
+    id: "21",
+    title: "Приложение №2 Перечень и стоимость услуг.",
+    url: "https://drive.google.com/file/d/1Y2xeQ6JV-hTb-sH4Dun3vwbB2dSnYT4y/view?usp=drive_link"
+  },
+  {
+    id: "20",
+    title: "Собрание собственников помещений в августе 2025г.",
+    url: "https://drive.google.com/drive/folders/1AFV5qU65-mt00BGe7ShA-aSjSwkCupnh?usp=drive_link"
+  },
+  {
     id: "1",
     title: "Отчёт о выполненных работах по техническому обслуживанию и модернизации оборудования МЖК \"Новая Александрия\" за 2020г",
     url: "https://drive.google.com/file/d/18COlGvdDf8zJBN4528PBHuZwAFfRpv5P/view?usp=share_link"
@@ -37,8 +52,7 @@ const documents = [
     id: "7",
     title: "План-график работ по уборке помещений (г. Сочи, проспект Пушкина, дом №6)",
     url: "https://drive.google.com/file/d/1Fmcq8aVqsKMfB9KAIGzhmJYW-67zLKt0/view?usp=share_link"
-  },
-  {
+  }, {
     id: "8",
     title: "Общая характеристика многоквартирного дома",
     url: "https://drive.google.com/file/d/1H2z0u-FPoQEP2b_tpC8n7Pg6N-lY_NtG/view?usp=share_link"

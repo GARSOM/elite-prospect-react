@@ -35,13 +35,13 @@
 }
 
 .overlay h2 {
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   margin-bottom: 0.3rem;
   color: var(--accent, #cfb386);
 }
 
 .overlay p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   margin: 0;
   color: #f1f1f1;
 }
@@ -61,10 +61,62 @@
   }
 
   .overlay h2 {
-    font-size: 1.2rem;
+     font-size: 1.2rem; 
   }
 
   .overlay p {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
+  }
+}/* =========================
+   A11Y: фикс текста в слайдере
+   ========================= */
+
+/* оверлей пусть не вылезает за слайд */
+body.a11y .slide {
+  position: relative;
+}
+
+body.a11y .overlay {
+  /* вместо "вылезания" — ограничиваем и даём скролл */
+  left: 4% !important;
+  right: 4% !important;
+  bottom: 4% !important;
+
+  max-width: none !important;
+  width: auto !important;
+
+  max-height: 55% !important;
+  overflow: auto !important;
+
+  padding: 14px 16px !important;
+}
+
+/* Важно: глобальный 28px перебиваем ТОЛЬКО в оверлее */
+body.a11y .overlay,
+body.a11y .overlay * {
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+}
+
+/* Заголовок чуть больше текста */
+body.a11y .overlay h2 {
+  font-size: 26px !important;
+  margin-bottom: 8px !important;
+}
+
+/* на мобилке ещё компактнее, чтобы не убивало кадр */
+@media (max-width: 768px) {
+  body.a11y .overlay,
+  body.a11y .overlay * {
+    font-size: 20px !important;
+    line-height: 1.45 !important;
+  }
+
+  body.a11y .overlay h2 {
+    font-size: 24px !important;
+  }
+
+  body.a11y .overlay {
+    max-height: 60% !important;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .services h2 {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   margin-bottom: 40px;
   position: relative;
 }
@@ -16,7 +16,7 @@
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
-  
+
 }
 
 .service-card {
@@ -25,7 +25,7 @@
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
-  
+
 }
 
 .service-card:hover {
@@ -35,16 +35,16 @@
 .service-card .icon {
   margin-bottom: 16px;
   color: #333;
-    opacity: 1;
+  opacity: 1;
 }
 
 .service-card h3 {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   margin-bottom: 10px;
 }
 
 .service-card p {
-  font-size: 0.95rem;
-  line-height: 1.5;
+  /* font-size: 0.95rem; */
+
   color: #444;
 }

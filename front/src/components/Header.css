@@ -76,3 +76,25 @@ body.light .logo img {
     display: flex;
   }
 }
+
+.a11y-toggle {
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a11y-toggle.is-on {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body.a11y .a11y-toggle {
+  padding: 10px 12px;
+  /* чуть крупнее в a11y */
+}

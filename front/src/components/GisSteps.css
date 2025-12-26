@@ -4,13 +4,13 @@
 }
 
 .gis h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 20px;
 }
 
 .gis-banner {
   max-width: 500px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto 40px;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@
 }
 
 .step {
-  max-width: 250px;
+  max-width: 400px;
   text-align: center;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .step p {
-  font-size: 0.95rem;
-  line-height: 1.4;
+  /* font-size: 0.95rem;
+  line-height: 1.4; */
 }
 
 /* Опционально — стрелки между шагами */
@@ -52,7 +52,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #0008;
 }
 
