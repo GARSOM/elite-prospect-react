@@ -66,3 +66,40 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
+/* =========================
+   A11Y + MOBILE: FIX MODAL
+   ========================= */
+
+/* Ограничиваем модалку по высоте экрана */
+.info-modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Кнопка закрыть всегда видна */
+.info-modal-content button {
+  position: sticky;
+  bottom: 0;
+  margin-top: 16px;
+}
+
+/* В режиме для слабовидящих делаем текст чуть компактнее в модалке */
+body.a11y .info-modal-content,
+body.a11y .info-modal-content * {
+  font-size: 22px !important;
+  line-height: 1.5 !important;
+}
+
+/* На мобилке ещё аккуратнее */
+@media (max-width: 768px) {
+  body.a11y .info-modal-content,
+  body.a11y .info-modal-content * {
+    font-size: 20px !important;
+  }
+
+  .info-modal-content {
+    padding: 20px;
+    max-height: 85vh;
+  }
+}
